@@ -1,4 +1,6 @@
 ---
+import NavBar from "../components/navBar.astro";
+
 const pageTitle = "About Me";
 
 const identity = {
@@ -21,18 +23,7 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "EJS", "SASS", "N
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <header>
-			<nav>
-				<div class="logo">
-					Mabsrencode Blog
-				</div>
-				<div class="navList">
-					<li><a href="/">home</a></li>
-					<li><a href="/about/">about</a></li>
-					<li><a href="/blog/">blog</a></li>
-				</div>
-			</nav>
-		</header>
+        <NavBar/>
         <section>
             <h1>{pageTitle}</h1>
             <h2>... and my new Astro site!</h2>
@@ -52,6 +43,5 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "EJS", "SASS", "N
                 {skills.map((skill)=> <li>{skill}</li>)}
             </ul>
         </section>
-		
 	</body>
 </html>
