@@ -1,5 +1,7 @@
 ---
-import NavBar from "../components/navBar.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/footer.astro";
+import '../styles/shared.css';
 const pageTitle = "My Astro Learning Blog";
 ---
 <html lang="en">
@@ -11,7 +13,7 @@ const pageTitle = "My Astro Learning Blog";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <NavBar/>
+        <Navigation/>
         <section>
             <h1>{pageTitle}</h1>
             <p>This is where I will post about my journey learning Astro.</p>
@@ -21,6 +23,6 @@ const pageTitle = "My Astro Learning Blog";
                     <li><a href="/posts/post-3/">Post 3</a></li>
                 </ul>
         </section>
-		
+		<Footer/>
 	</body>
 </html>
