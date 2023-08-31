@@ -5,7 +5,7 @@ pubDate: 2023-08-31
 description: "This is the first post of my new Astro blog."
 author: "Reniel Mababa"
 image:
-  url: "https://docs.astro.build/assets/full-logo-light.png"
+  url: "https://seeklogo.com/images/A/astro-logo-ED1B0AACA0-seeklogo.com.png"
   alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
 ---
