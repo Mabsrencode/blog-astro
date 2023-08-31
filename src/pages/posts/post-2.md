@@ -1,7 +1,8 @@
 ---
-title: My Second Blog Post
-author: Astro Learner
+layout: ../../layouts/MarkdownPostLayout.astro
 description: "After learning some Astro, I couldn't stop!"
+title: My Blog Website using Astro
+author: "Reniel Mababa"
 image:
   url: "https://docs.astro.build/assets/arc.webp"
   alt: "Thumbnail of Astro arcs."

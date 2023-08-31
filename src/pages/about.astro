@@ -1,5 +1,8 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from "../components/Navigation.astro";
+import Hamburger from "../components/Hamburger.astro";
+import Logo from "../components/Logo.astro";
 import Footer from "../components/footer.astro";
 import '../styles/shared.css';
 
@@ -40,7 +43,13 @@ const skillColorBlue = "#141b73";
         </style>
 	</head>
 	<body>
-        <Navigation/>
+        <header>
+			<nav>
+				<Logo/>
+				<Hamburger/>
+				<Navigation/>
+			</nav>
+		</header>
         <section>
             <h1>{pageTitle}</h1>
             <h2>... and my new Astro site!</h2>
@@ -69,11 +78,7 @@ const skillColorBlue = "#141b73";
         </section>
         <Footer/>
         <script>
-            function clickButton(){
-                console.log("Click");
-            }
-
-            document.getElementById("button").addEventListener("click", clickButton);
+            import  "../scripts/menu.js";
         </script>
 	</body>
 </html>
